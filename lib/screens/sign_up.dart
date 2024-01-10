@@ -13,6 +13,7 @@ class _SignUpState extends State<SignUp> {
   final AuthService _auth = AuthService();
   final _formKey = GlobalKey<FormState>();
 
+  String fullName = '';
   String email = '';
   String password = '';
   String error = '';
@@ -47,7 +48,11 @@ class _SignUpState extends State<SignUp> {
                     ),
                     validator: (val) =>
                         val!.isEmpty ? 'Enter, full name !' : null,
-                    onChanged: (val) {},
+                    onChanged: (val) {
+                      setState(() {
+                        fullName = val;
+                      });
+                    },
                   ),
                   const SizedBox(
                     height: 30.0,
@@ -100,7 +105,7 @@ class _SignUpState extends State<SignUp> {
                     onPressed: () async {
                       if (_formKey.currentState!.validate()) {
                         dynamic result = await _auth
-                            .registerWithEmailAndPassword(email, password);
+                            .registerWithEmailAndPassword(fullName, email, password);
                         if (result == null) {
                           setState(() =>
                               error = 'Please, supply valid credentials !');
