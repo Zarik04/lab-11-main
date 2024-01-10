@@ -1,16 +1,12 @@
-# lab_11_main
+# Lab 7 Homework
+---------------------------------------------------------
+## **Name:** Zarshedjon Nasimov
+## **ID:** 2110058
+-----------------------------------------------------
 
-A new Flutter project.
+In this mobile app, I configured Firebase auth for my mobile app. I have three screens:
+- two auth screens
+- home screen.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+I used email and password authentication for this project. 
+The dart file that handles main auth functions is in the service folder.
