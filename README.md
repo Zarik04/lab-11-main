@@ -1,4 +1,4 @@
-# Lab 7 Homework
+# Lab 11 Homework
 ---------------------------------------------------------
 ## **Name:** Zarshedjon Nasimov
 ## **ID:** 2110058
